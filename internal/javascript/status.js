@@ -12,3 +12,8 @@ const changeFavicon = link => {
     document.head.appendChild($favicon)
   }
 }
+
+changeFavicon("https://gh.kayliah.net/favicon/favicon-32x32.png");
+setInterval(function(){
+   document.title = "Status des services – Kayliah";
+},100);
