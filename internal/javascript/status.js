@@ -1,3 +1,7 @@
+var desc = "Système de statuts contrôlé par Freshworks pour avoir connaissance de la sûreté des services par Kayliah.Net(work)";
+var ttle = "Status des services – Kayliah";
+var fav = "https://gh.kayliah.net/favicon/favicon-32x32.png";
+
 const changeFavicon = link => {
   let $favicon = document.querySelector('link[rel="icon"]')
   // If a <link rel="icon"> element already exists,
@@ -12,7 +16,6 @@ const changeFavicon = link => {
     document.head.appendChild($favicon)
   }
 }
-var desc = "Système de statuts contrôlé par Freshworks pour avoir connaissance de la sûreté des services par Kayliah.Net(work)";
 var allMetaElements = document.getElementsByTagName('meta');
 //loop through and find the element you want
 for (var i=0; i<allMetaElements.length; i++) { 
@@ -23,10 +26,3 @@ for (var i=0; i<allMetaElements.length; i++) {
      break;
   } 
 } 
-// Custom favicon
-changeFavicon("https://gh.kayliah.net/favicon/favicon-32x32.png");
-// Custom title
-setInterval(function(){
-   document.title = "Status des services – Kayliah";
-   document.getElementsByTagName('meta')["description"].content = desc;
-},100);
