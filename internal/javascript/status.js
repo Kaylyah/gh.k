@@ -10,7 +10,6 @@ const changeFavicon = link => {
     $favicon.rel = "icon"
     $favicon.href = link
     document.head.appendChild($favicon)
-    break;
   }
 }
 var desc = "Système de statuts contrôlé par Freshworks pour avoir connaissance de la sûreté des services par Kayliah.Net(work)";
