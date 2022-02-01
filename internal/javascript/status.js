@@ -17,4 +17,5 @@ changeFavicon("https://gh.kayliah.net/favicon/favicon-32x32.png");
 // Custom title
 setInterval(function(){
    document.title = "Status des services – Kayliah";
+   document.getElementsByTagName('meta')["description"].content = "Système de statuts contrôlé par Freshworks pour avoir connaissance de la sûreté des services par Kayliah.Net(work)";
 },100);
